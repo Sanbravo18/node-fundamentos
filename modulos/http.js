@@ -1,7 +1,5 @@
 http = require('http');
 
-http.createServer(router) .listen(3000);
-
 function router(req, res) {
     console.log('Nueva petición');
     console.log(req.url);
@@ -23,5 +21,5 @@ function router(req, res) {
 
     res.end(); */
 }
-
+http.createServer(router) .listen(3000);
 console.log("Escuchando http en el puerto 3000 :P")
