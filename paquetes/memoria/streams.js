@@ -22,6 +22,8 @@ readableStream.on('end', function(){
 process.stdout.write('que')
 process.stdout.write('tal') */
 
+//otro super buffer
+
 const Transform = stream.Transform;
 
 function Mayus(){
@@ -34,7 +36,6 @@ Mayus.prototype._transform = function(chunk, codif, cb){
     this.push(chunkMayus);
     cb();
 }
-
 
 var mayus = new Mayus();
 
